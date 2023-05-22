@@ -6,5 +6,9 @@ class dokter;
 class pasien {
 public:
 	string nama;
-	vector
+	vector<dokter*> daftar_dokter;
+	pasien(string pNama) :nama(pNama) {
+		cout << "Pasien \"" << nama << "\" ada\n";
+	}
+
 };
